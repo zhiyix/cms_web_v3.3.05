@@ -1,0 +1,290 @@
+{
+    "WE": {
+        "PathTitle": {
+            "account": {
+                "title":"用户",
+                "icon": "anticon-team"
+            },
+            "personal": {
+                "title":"个人中心",
+                "icon": null
+            },
+            "staff": {
+                "title":"成员管理",
+                "icon": null
+            },
+            "charts": {
+                "title": "图谱",
+                "icon": "anticon-line-chart"
+            },
+            "overview": {
+                "title":"总貌图",
+                "icon": null
+            },
+            "trend": {
+                "title":"趋势图",
+                "icon": null
+            },
+            "timeFreq": {
+                "title":"时频图",
+                "icon": null
+            },
+            "envelope": {
+                "title":"包络图",
+                "icon": null
+            },
+            "waterfall": {
+                "title":"瀑布图",
+                "icon": null
+            },
+            "locationMap": {
+                "title":"轨迹图",
+                "icon": null
+            },
+            "alarm": {
+                "title":"报警",
+                "icon": "anticon-bell"
+            },
+            "vibration": {
+                "title":"振动量",
+                "icon": null
+            },
+            "process": {
+                "title":"过程量",
+                "icon": null
+            },
+            "device": {
+                "title":"设备",
+                "icon": "anticon-hdd"
+            },
+            "groups": {
+                "title":"风场管理",
+                "icon": null
+            },
+            "suites": {
+                "title":"机组管理",
+                "icon": null
+            },
+            "configuration": {
+                "title":"机组组态",
+                "icon": null
+            },
+            "positionConfig": {
+                "title":"总貌组态",
+                "icon": null
+            },
+            "collector": {
+                "title":"采集器管理",
+                "icon": null
+            },
+            "diagnose": {
+                "title":"诊断",
+                "icon": "anticon-paper-clip"
+            },
+            "notes": {
+                "title":"诊断记录",
+                "icon": null
+            },
+            "report": {
+                "title":"报表",
+                "icon": "anticon-file-text"
+            },
+            "monitorReport": {
+                "title":"监测报表",
+                "icon": null
+            },
+            "reportDownload": {
+                "title":"报表下载",
+                "icon": null
+            },
+            "datas": {
+                "title":"数据",
+                "icon": "anticon-search"
+            },
+            "trendRetrieve": {
+                "title":"趋势检索",
+                "icon": null
+            },
+            "audioRetrieve": {
+                "title":"音频检索",
+                "icon": null
+            },
+            "downloadRecord": {
+                "title":"下载记录",
+                "icon": null
+            },
+            "logs": {
+                "title":"日志",
+                "icon": "anticon-tag"
+            },
+            "systemLog": {
+                "title":"系统日志",
+                "icon": null
+            },
+            "alarmLog": {
+                "title":"报警日志",
+                "icon": null
+            },
+            "system": {
+                "title":"系统",
+                "icon": "anticon-setting"
+            },
+            "setting": {
+                "title":"系统设置",
+                "icon": null
+            },
+            "help": {
+                "title":"帮助文档",
+                "icon": null
+            }
+        },
+        "GroupTitle": "风场",
+        "SuiteTitle": "机组",
+        "SensorTitle": "传感器",
+        "GatherTitle": "采集器"
+    },
+    "PE": {
+        "PathTitle": {
+            "account": {
+                "title":"用户",
+                "icon": "anticon-team"
+            },
+            "personal": {
+                "title":"个人中心",
+                "icon": null
+            },
+            "staff": {
+                "title":"成员管理",
+                "icon": null
+            },
+            "charts": {
+                "title": "图谱",
+                "icon": "anticon-line-chart"
+            },
+            "overview": {
+                "title":"总貌图",
+                "icon": null
+            },
+            "trend": {
+                "title":"趋势图",
+                "icon": null
+            },
+            "timeFreq": {
+                "title":"时频图",
+                "icon": null
+            },
+            "envelope": {
+                "title":"包络图",
+                "icon": null
+            },
+            "waterfall": {
+                "title":"瀑布图",
+                "icon": null
+            },
+            "locationMap": {
+                "title":"轨迹图",
+                "icon": null
+            },
+            "alarm": {
+                "title":"报警",
+                "icon": "anticon-bell"
+            },
+            "vibration": {
+                "title":"振动量",
+                "icon": null
+            },
+            "process": {
+                "title":"过程量",
+                "icon": null
+            },
+            "device": {
+                "title":"设备",
+                "icon": "anticon-hdd"
+            },
+            "groups": {
+                "title":"工厂管理",
+                "icon": null
+            },
+            "suites": {
+                "title":"机组管理",
+                "icon": null
+            },
+            "configuration": {
+                "title":"机组组态",
+                "icon": null
+            },
+            "positionConfig": {
+                "title":"总貌组态",
+                "icon": null
+            },
+            "collector": {
+                "title":"采集器管理",
+                "icon": null
+            },
+            "diagnose": {
+                "title":"诊断",
+                "icon": "anticon-paper-clip"
+            },
+            "notes": {
+                "title":"诊断记录",
+                "icon": null
+            },
+            "report": {
+                "title":"报表",
+                "icon": "anticon-file-text"
+            },
+            "monitorReport": {
+                "title":"监测报表",
+                "icon": null
+            },
+            "reportDownload": {
+                "title":"报表下载",
+                "icon": null
+            },
+            "datas": {
+                "title":"数据",
+                "icon": "anticon-search"
+            },
+            "trendRetrieve": {
+                "title":"趋势检索",
+                "icon": null
+            },
+            "audioRetrieve": {
+                "title":"音频检索",
+                "icon": null
+            },
+            "downloadRecord": {
+                "title":"下载记录",
+                "icon": null
+            },
+            "logs": {
+                "title":"日志",
+                "icon": "anticon-tag"
+            },
+            "systemLog": {
+                "title":"系统日志",
+                "icon": null
+            },
+            "alarmLog": {
+                "title":"报警日志",
+                "icon": null
+            },
+            "system": {
+                "title":"系统",
+                "icon": "anticon-setting"
+            },
+            "setting": {
+                "title":"系统设置",
+                "icon": null
+            },
+            "help": {
+                "title":"帮助文档",
+                "icon": null
+            }
+        },
+        "GroupTitle": "工厂",
+        "SuiteTitle": "机组",
+        "SensorTitle": "传感器",
+        "GatherTitle": "采集器"
+    }
+}

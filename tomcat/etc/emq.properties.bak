@@ -1,0 +1,9 @@
+#emq configuration
+#服务器地址
+emq.host=ws://114.215.30.117:8083
+#主机名
+emq.id=c1231235129876
+#用户名
+emq.client.name=test
+#用户密码
+emq.client.password=test

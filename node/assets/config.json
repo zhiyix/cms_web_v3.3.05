@@ -1,0 +1,9 @@
+{
+    "ip": "http://47.97.119.137",
+    "emqIP": "47.97.119.137",
+    "emqPort": "8083",
+    "algorithmPort": "8087",
+    "apiPort": "8087",
+    "tradeType": "PE",
+    "limitRPM": 0
+}

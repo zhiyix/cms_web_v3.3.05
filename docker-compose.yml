@@ -1,0 +1,60 @@
+version: '2'
+services:     
+  mysql-3305:
+    image: mysql:5.7
+    container_name: mysql-3305
+    restart: always
+    ports: 
+     - 13305:3306
+    volumes:
+     - /etc/localtime:/etc/localtime:ro
+     - ~/docker/v3.3.05/mysql/data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 
+     
+  redis-3305:
+    image: iot.imetre.cn:8511/my-redis
+    container_name: redis-3305
+    restart: always
+    ports: 
+     - 23305:6379
+    volumes:
+     - /etc/localtime:/etc/localtime:ro
+     - ~/docker/v3.3.05/redis/data:/data
+
+  tomcat-3305:
+    image: iot.imetre.cn:8511/cms_app_web_server:v3.3.05
+    container_name: tomcat-3305
+    restart: always
+    environment:
+      - MYSQL_HOST=172.16.19.246
+      - REDIS_HOST=172.16.19.246
+      - MQTT_HOST=172.16.19.246
+      - MYSQL_PORT=13305
+      - REDIS_PORT=23305
+      - MQTT_PORT=1884
+      - MYSQL_PASSWORD=
+      - REDIS_PASSWORD=
+    ports: 
+     - 8087:8080
+    volumes:
+     - /etc/localtime:/etc/localtime:ro
+     - ~/docker/v3.3.05/tomcat/data:/usr/local/tomcat/data
+     - ~/docker/v3.3.05/tomcat/logs:/usr/local/tomcat/logs
+     - ~/docker/v3.3.05/tomcat/etc:/usr/local/tomcat/webapps/cms-web-client/WEB-INF/classes/props
+     - ~/docker/v3.3.05/tomcat/etc:/usr/local/tomcat/webapps/as_web_client/WEB-INF/classes/props
+    links:
+     - mysql-3305
+     - redis-3305
+    
+  web-3305:
+    image: iot.imetre.cn:8511/cms_web_client:v3.3.05
+    container_name: web-3305
+    restart: always
+    ports: 
+     - 4200:3000
+    volumes:
+     - /etc/localtime:/etc/localtime:ro
+     - ~/docker/v3.3.05/node/assets:/usr/local/web/apps/dist/assets
+    links:
+     - tomcat-3305
