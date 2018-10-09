@@ -21,7 +21,20 @@ services:
     volumes:
      - /etc/localtime:/etc/localtime:ro
      - ~/docker/v3.3.05/redis/data:/data
-
+ 
+  emqttd-3305:
+    image: emqttd-docker-v2.3.11
+    container_name: emqttd-3305
+    restart: always
+    environment:
+      - MQTT_EMQ__MAX_PACKET_SIZE=400KB
+    ports: 
+     - 1884:1883
+     - 8083:8083
+     - 8084:8084
+     - 8883:8883
+     - 18083:18083
+    
   tomcat-3305:
     image: iot.imetre.cn:8511/cms_app_web_server:v3.3.05
     container_name: tomcat-3305
@@ -46,6 +59,7 @@ services:
     links:
      - mysql-3305
      - redis-3305
+     - emqttd-3305
     
   web-3305:
     image: iot.imetre.cn:8511/cms_web_client:v3.3.05
