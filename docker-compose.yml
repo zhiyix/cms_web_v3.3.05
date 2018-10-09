@@ -27,7 +27,7 @@ services:
     container_name: emqttd-3305
     restart: always
     environment:
-      - MQTT_EMQ__MAX_PACKET_SIZE=400KB
+      - EMQ_MQTT__MAX_PACKET_SIZE=400KB
     ports: 
      - 1884:1883
      - 8083:8083
